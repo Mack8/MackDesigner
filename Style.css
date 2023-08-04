@@ -1,0 +1,108 @@
+
+.adjusted-text {
+    white-space: pre-line;
+    word-wrap: break-word;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#NH-Izquierda,
+#NH-Derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   box-sizing: content-box;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  footer{
+    margin-top: 10px;
+    background-color:lightskyblue ;
+    color: black;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+
+.footer h4 {
+    font-weight: bold;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+/* Alinear los elementos dentro del footer */
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .col-md-4 {
+    flex: 0 0 33.3333%;
+    /* Que cada columna ocupe el 33.3333% del ancho en dispositivos grandes (md) */
+}
+  
+  .nosotros{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #Contactame input::placeholder{
+    text-align: center;
+}
+
+  @media (max-width: 767.98px) {
+    .footer .col-md-4 {
+        flex: 0 0 100%;
+        /* Que cada columna ocupe el 100% del ancho en dispositivos pequeños */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-md-6 {
+        max-width: 100%;
+        max-height: none;
+        /* Quitamos la altura máxima en dispositivos pequeños */
+    }
+
+    .mb-3 {
+        margin-bottom: 1.5rem !important;
+        /* Agregamos un margen inferior para separar los divs en dispositivos móviles */
+    }
+
+    .col-12 {
+        max-width: 100%;
+    }
+
+}
